@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 123, 58, 237;
+  --color-accent: 0, 206, 209;
+  --color-gold: 255, 215, 0;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-primary-500/30 text-primary-800 dark:text-primary-200;
+  }
+}
+
+@layer components {
+  .custom-cursor {
+    @apply pointer-events-none fixed z-50 h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-500 opacity-70 mix-blend-screen transition-[transform,width,height] duration-300 ease-out;
+  }
+
+  .social-link {
+    @apply flex items-center gap-3 rounded-xl bg-white/80 px-6 py-4 text-lg font-medium text-slate-800 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white hover:scale-105 hover:shadow-xl dark:bg-slate-800/80 dark:text-slate-200 dark:hover:bg-slate-800;
+  }
+
+  .canvas-container {
+    @apply fixed inset-0 h-full w-full;
+  }
+}
+
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-5 {
+  animation-delay: 0.5s;
+}
