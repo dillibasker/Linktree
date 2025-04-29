@@ -1,5 +1,6 @@
 import { SocialLink } from '../types';
 import { Github, Linkedin, Twitter, Briefcase, FileText } from 'lucide-react';
+import resumeFile from '../assets/resume.pdf';
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
@@ -37,7 +38,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'resume',
     name: 'Resume',
-    url: 'https://yourportfolio.com/resume.pdf',
+    url: resumeFile,
     icon: FileText,
     color: 'text-emerald-600 dark:text-emerald-400',
     delay: 5,
