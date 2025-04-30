@@ -20,7 +20,7 @@ function App() {
   
   useEffect(() => {
     // Update page title
-    document.title = 'My 3D Linktree | Connect With Me';
+    document.title = 'Portfolio';
   }, []);
 
   return (

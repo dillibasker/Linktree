@@ -30,7 +30,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'portfolio',
     name: 'Portfolio',
-    url: 'https://my-portfolio-seven-lake-72.vercel.app/',
+    url: 'https://port-folio-digital.vercel.app/',
     icon: Briefcase,
     color: 'text-purple-600 dark:text-purple-400',
     delay: 4,
